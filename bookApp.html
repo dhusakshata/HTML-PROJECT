@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+<style>
+    .delete {
+      background-color: red;
+    color: white;
+    border: 1px;
+    cursor: pointer;
+    font-size: 18px
+		
+		
+    }
+	
+  </style>
+</head>
+<body>
+ <div class="containers">
+    <h1>MyBookList</h1>
+ </div>
+    <div class="form-group">
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="author">Author:</label><br>
+      <input type="text" id="author" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="isbn">ISBN:</label><br>
+      <input type="text" id="isbn" class="form-control">
+    </div>
+    <button id="submit" class="btn btn-primary">AddBook</button>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN#</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+		  <tr>
+		<td>Book1</td>
+			  <td>Author1</td>
+			  
+			  <td>1</td>
+			   <td>
+                  <button class="delete">X</button>
+              </td>
+			  
+		  </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+	
+    <script type="text/javascript" src="./script.js">
+</script>
+
+</body>
+
+</html>
